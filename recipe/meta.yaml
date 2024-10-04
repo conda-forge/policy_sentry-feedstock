@@ -28,6 +28,7 @@ requirements:
     - pyyaml
     - requests
     - schema
+    - orjson
 
 test:
   imports:
