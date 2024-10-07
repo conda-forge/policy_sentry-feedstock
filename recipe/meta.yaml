@@ -1,5 +1,5 @@
 {% set name = "policy_sentry" %}
-{% set version = "0.11.10" %}
+{% set version = "0.13.1" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/policy_sentry-{{ version }}.tar.gz
-  sha256: 2c3e4405a72f8284f7a3c987fbd666b3ae63fd095101e004e9ee6a1fb1ab76ff
+  sha256: 6bb0133d897a45349aed78942459b4f583542051bb181e3a64464d13af8190b0
 
 build:
   number: 0
@@ -21,6 +21,7 @@ requirements:
   host:
     - pip
     - python >=3.6
+    - setuptools
   run:
     - beautifulsoup4
     - click
@@ -28,8 +29,9 @@ requirements:
     - pyyaml
     - requests
     - schema
+    - orjson
 
-test:
+test: 
   imports:
     - policy_sentry
     - policy_sentry.analysis
@@ -48,3 +50,4 @@ about:
 extra:
   recipe-maintainers:
     - ForgottenProgramme
+    - nick-harmening
