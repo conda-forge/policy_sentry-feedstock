@@ -31,7 +31,7 @@ requirements:
     - schema
     - orjson
 
-test: 
+test:
   imports:
     - policy_sentry
     - policy_sentry.analysis
