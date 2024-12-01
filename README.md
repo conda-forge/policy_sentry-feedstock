@@ -144,4 +144,5 @@ Feedstock Maintainers
 =====================
 
 * [@ForgottenProgramme](https://github.com/ForgottenProgramme/)
+* [@nick-harmening](https://github.com/nick-harmening/)
 
