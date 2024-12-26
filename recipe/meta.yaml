@@ -11,7 +11,7 @@ source:
   sha256: db2b39f92989077f83fc4dd1d064e3ff20b69cfed82168ebdc060e7dce292e77
 
 build:
-  number: 0
+  number: 1
   noarch: python
   entry_points:
     - policy_sentry=policy_sentry.bin.cli:main
@@ -20,12 +20,12 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.6
+    - python {{ python_min }}
     - setuptools
   run:
     - beautifulsoup4
     - click
-    - python >=3.6
+    - python >={{ python_min }}
     - pyyaml
     - requests
     - schema
@@ -40,6 +40,7 @@ test:
     - policy_sentry --help
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: https://github.com/salesforce/policy_sentry
