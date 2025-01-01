@@ -1,5 +1,5 @@
 {% set name = "policy_sentry" %}
-{% set version = "0.13.2" %}
+{% set version = "0.14.0" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/policy_sentry-{{ version }}.tar.gz
-  sha256: db2b39f92989077f83fc4dd1d064e3ff20b69cfed82168ebdc060e7dce292e77
+  sha256: 5c52cebebad26e2360393f34af523c1685541d67b0dfd721b0779dbe9e327f1a
 
 build:
   number: 0
